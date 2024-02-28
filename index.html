@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Pager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/55cfe6f560.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <style>
+        .material-symbols-rounded {
+            font-size: 20px;
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        #dark-mode-toggle {
+            background-color: transparent;
+            border: none;
+            text-align: center;
+        }
+
+        #dark-mode-toggle>span {
+            vertical-align: middle;
+        }
+    </style>
+
+    <script>
+        function darkModeToggle() {
+            var icon = document.getElementById('dark_mode');
+            var element = document.body;
+            if (darkMode == true) {
+                element.classList.toggle("dark-mode");
+                icon.textContent = "light_mode";
+            } else if (darkMode !== true) {
+                element.classList.toggle("light-mode");
+                icon.textContent = "dark_mode";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Graphic <span class="textpart1">Design</span></h1>
+        <p>Some of my works, and favorite designs.</p>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="mywork.html">My Work</a>
+        <a href="https://www.nhl.com/bruins/">Boston Bruins</a>
+        <a href="#" style="float:right" id="dark-mode-toggle" onclick="darkModeToggle()"><span id="dark_mode"
+                class="material-symbols-rounded">
+                dark_mode
+            </span></a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>DAVID <span class="textpart1" style="text-transform: uppercase;">Pastrňák GRAPHIC</span></h2>
+                <h5>Graphics made for the Bruins' David Pastrňák, created <span class="date">Nov 17, 2022</span></h5>
+                <div class="fakeimg" style="height:fit-content;"><img src="Pastrnak Graphic.jpg"
+                        alt="Boston Bruins' David Pastrnak Graphic, by KM Sports Designs (Me)."></div>
+                <p class="imgdesc">David Pastrnak Graphic</p>
+                <p>Boston Bruins' David Pastrnak Graphic, by KM Sports Designs (Me).</p>
+            </div>
+            <div class="card">
+                <h2>GAME <span class="textpart1">DAY GRAPHIC</span></h2>
+                <h5>Graphics made for the Bruins' game, <span class="date">Oct 24, 2023</span></h5>
+                <div class="fakeimg" style="height:fit-content;"><img src="BOS @ CHI Tue., Oct. 24, 2023.png"
+                        alt="Boston Bruins vs. Chicago Blackhawks Graphic, by KM Sports Designs (Me)."></div>
+                <p class="imgdesc">Boston Bruins vs. Chicago Blackhawks Graphic</p>
+                <p>Boston Bruins vs. Chicago Blackhawks Graphic, by KM Sports Designs (Me).</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About <span class="textpart2">Me</span></h2>
+                <!-- <div class="fakeimg" style="height:fit-content;"><img style="width:50%" src="KM Logo (Transparent).png"
+                        alt="Boston Bruins vs. Chicago Blackhawks Graphic, by KM Sports Designs (Me)."></div> -->
+                <p>Hello! My name is Kieran. I am a student, coder, competitive Irish step dancer, artist, music
+                    producer/maker,
+                    and graphic designer.</p>
+            </div>
+            <div class="card" id="poppostcard">
+                <h3>Favorite <span class="textpart2">Graphics</span></h3>
+                <div class="fakeimgdrop">
+                    <div class="fakeimg" style="height:fit-content;"><img src="Walpole Timberwolves Graphic (4K).png"
+                            alt="Walpole Timberwolves Graphic, by KM Sports Designs (Me)."></div>
+                </div>
+                <div class="fakeimgdrop">
+                    <div class="fakeimg" style="height:fit-content;"><img src="VGK vs. FLA Game 5.png"
+                            alt="Florida Panthers vs. Vegas Golden Knights, Stanley Cup Final, Game 5 Graphic, by KM Sports Designs (Me).">
+                    </div>
+                </div>
+                <div class="fakeimgdrop">
+                    <div class="fakeimg" style="height:fit-content;"><img src="Lewis Hamilton Graphic.png"
+                            alt="Mercedes-AMG PETRONAS F1 Teams' Lewis Hamilton Graphic, by KM Sports Designs (Me).">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Follow <span class="textpart2">Me</span></h3>
+                <p>Follow my account on:</p>
+                <!-- Instagram -->
+                <a class="social-icon" target="_blank" href="https://www.instagram.com/kmsportsdesigns">Instagram <i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3><small>Copyright &copy; 2023, Walpole High School, WHS Web Design</small></h3>
+    </div>
+
+    <!--
+        <!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<style>
+#Gpic1 {
+    /*width: 75%;
+    height: 187px;
+    display: block;
+    background: black;*/
+    z-index: 3000;
+    background-color: #aaa;
+    width: 100%;
+    height: 54px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#table {
+    /*width: auto;
+    height: 187px;*/
+    z-index: 3001;
+    /*position: absolute;*/
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+</style>
+
+<script>
+$(document).ready(function (){
+    $('#Gpic1').hover(function () {
+    $(this).find('img').fadeTo(500, 0.5);
+}, function () {
+    $(this).find('img').fadeTo(500, 1);
+});
+
+$('#Gpic1').click(function (e) {
+    
+    if ($(e.target).hasClass('expanded')) {
+        $("#Gpic1").removeClass('expanded').stop().animate({
+        height: 54
+    }, 200);
+    } else {
+        $('#Gpic1').find('img').fadeTo(0, 1);
+        $("#Gpic1").addClass('expanded').stop().animate({
+            height: '100%'
+        }, 200);
+    }
+}).mouseout(function () {
+    $("#Gpic1").removeClass('expanded').stop().animate({
+        height: 54
+    }, 200);
+});
+})
+</script>
+</head>
+
+<body>
+<div id="Gpic1">
+	<div class="fakeimg" style="height:fit-content;">
+    	<img id="table" src="http://i.imgur.com/vaFzrtV.jpg" />
+    </div>
+</div>
+<div>
+    <p> some random text </p>
+</div>
+</body>
+
+</html>
+
+    -->
+</body>
+
+</html>

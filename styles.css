@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+:root {
+    --ltr-green: #A1CCA5;
+    /* Light Text */
+    --lt-green: #8FB996;
+    /* Other */
+    --green: #709775;
+    /* Button Background */
+    --dk-green: #415D43;
+    /* Darker Text */
+    --dkr-green: #111D13;
+    /* Dark Text/Button Border */
+}
+
+/* [data-theme="dark"] {
+    --bg-color: var(--dkr-green);
+    --card-bg-color: var(--dk-green);
+    --btn-color: var(--green);
+    --header-font-color: #f1f1f1;
+    --font-color: #fff;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 10px;
+    background: #f1f1f1;
+    color: #000;
+}
+
+/* Light Mode */
+.light-mode {
+    background-color: #f1f1f1;
+    /* transition: 125ms all ease-in-out; */
+}
+
+.light-mode .header {
+    background: #fff;
+    transition: 125ms all ease-in-out;
+}
+
+.light-mode .topnav {
+    background: #fff;
+    transition: 125ms all ease-in-out;
+}
+
+.light-mode .topnav a {
+    color: black;
+    background-color: var(--lt-green);
+    border: 2px solid var(--lt-green);
+    transition: 125ms all ease-in-out;
+}
+
+.light-mode .topnav a.active {
+    background-color: #fff;
+    border: 2px solid var(--dkr-green);
+    transition: 125ms all ease-in-out;
+}
+
+.light-mode .textpart1 {
+    color: var(--dk-green);
+    transition: 125ms all ease-in-out;
+}
+
+.light-mode .textpart2 {
+    color: var(--ltr-green);
+    transition: 125ms all ease-in-out;
+}
+
+.light-mode .leftcolumn {
+    background: #f1f1f1;
+    transition: 125ms all ease-in-out;
+}
+
+.light-mode .rightcolumn {
+    background: #f1f1f1;
+    transition: 125ms all ease-in-out;
+}
+
+.light-mode .card {
+    background: white;
+    transition: 125ms all ease-in-out;
+}
+
+.light-mode .footer {
+    background: #ddd;
+    transition: 125ms all ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: var(--dkr-green);
+    /* transition: 125ms all ease-in-out; */
+}
+
+.dark-mode .header {
+    background: var(--dk-green);
+    color: #f1f1f1;
+    transition: 125ms all ease-in-out;
+}
+
+.dark-mode .topnav {
+    background: var(--dk-green);
+    transition: 125ms all ease-in-out;
+}
+
+.dark-mode .topnav a {
+    color: #fff;
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    transition: 125ms all ease-in-out;
+}
+
+.dark-mode .topnav a.active {
+    background: var(--dk-green);
+    color: #fff;
+    border: 2px solid #fff;
+    transition: 125ms all ease-in-out;
+}
+
+.dark-mode .textpart1 {
+    color: var(--green);
+    transition: 125ms all ease-in-out;
+}
+
+.dark-mode .textpart2 {
+    color: var(--green);
+    transition: 125ms all ease-in-out;
+}
+
+.dark-mode .leftcolumn {
+    background: var(--dkr-green);
+    color: #f1f1f1;
+    transition: 125ms all ease-in-out;
+}
+
+.dark-mode .rightcolumn {
+    background: var(--dkr-green);
+    color: #f1f1f1;
+    transition: 125ms all ease-in-out;
+}
+
+.dark-mode .card {
+    background: var(--dk-green);
+    color: #f1f1f1;
+    transition: 125ms all ease-in-out;
+}
+
+.dark-mode .footer {
+    background: var(--dkr-green);
+    color: #f1f1f1;
+    transition: 125ms all ease-in-out;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    background-image: url("KM Logo (Transparent).png");
+}
+
+.header h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.textpart1 {
+    color: var(--dk-green);
+}
+
+.textpart2 {
+    color: var(--ltr-green);
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 800;
+    background-color: var(--lt-green);
+    border: 2px solid var(--lt-green);
+    font-size: 14px;
+    margin-right: 15px;
+    margin-bottom: 6px;
+    transition: 125ms all ease-in-out;
+    border-radius: 5px;
+}
+
+.topnav a:last-child {
+    margin-right: 10px;
+}
+
+.topnav a:first-child {
+    margin-left: 10px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: var(--green);
+    border: 2px solid var(--green);
+}
+
+.topnav a.active {
+    background-color: #fff;
+    border: 2px solid var(--dkr-green);
+}
+
+.topnav a.active:hover {
+    background-color: var(--dkr-green);
+    border: 2px solid var(--dkr-green);
+    color: #fff;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Header 2 */
+h2 {
+    font-weight: 900;
+}
+
+.date {
+    color: var(--dk-green);
+    font-weight: 800
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fakeimg img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.imgdesc {
+    color: var(--lt-green);
+    font-weight: 800;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#poppostcard>.fakeimgdrop {
+    margin-bottom: 10px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.social-icon,
+i {
+    text-decoration: none;
+    transition: 125ms all ease-in-out;
+    color: #000;
+    font-size: large;
+    vertical-align: middle;
+}
+
+.social-icon:hover {
+    font-weight: 600;
+    color: var(--green);
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
